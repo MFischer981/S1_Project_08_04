@@ -1,0 +1,127 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Micah Fischer
+   Date:   12-11-18
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navlink {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.navlink * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.navlink li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.7em 1.5em;
+    padding: .6em .2em
+}
+
+.navlink a {
+    padding: 0.6em 0;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-decoration: none;
+}
+
+.navlink a:before,
+.navlink a:after {
+    height: 2px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: #2980b9;
+    width: 0;
+}
+
+.navlink a:before {
+    top: 0;
+    right: 0;
+}
+
+.navlink a:after {
+    bottom: 0;
+    left: 0;
+}
+
+.navlink a:hover,
+.navlink .current a {
+    color: #000000bb;
+}
+
+.navlink a:hover:before,
+.navlink .current a:before,
+.navlink a:hover:after,
+.navlink .current a:after {
+    width: 100%;
+}
+
+header {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1527259216948-b0c66d6fc31f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    height: 600px;
+    background-size: cover;
+    background-position: center bottom;
+    filter: brightness(40%);
+    position: relative;
+    z-index: 0;
+}
+
+article {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin: -300px auto 0;
+    position: relative;
+    z-index: 100;
+    background: white;
+    padding: 20px 32px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    border-top: 6px solid #2980b9;
+    ;
+}
+
+article address {
+    font-family: Arial,
+        sans-serif;
+    font-style: normal;
+}
+
+table {
+    margin-top: 40px;
+    width: 100%;
+    border: rgb(235, 235, 235) 1px solid;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: rgb(235, 235, 235) 1px solid;
+    padding: 12px 6px;
+    width: 12.5%;
+}
