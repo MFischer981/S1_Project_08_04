@@ -11,3 +11,53 @@
    Supporting Files: 
 
 */
+
+/* Table with a margin of 40px at the top, a width of 100%, a 1px collapsed solid border of light grey, with text aligned vertically aligned to the center. */
+table {
+    margin-top: 40px;
+    width: 100%;
+    border: rgb(235, 235, 235) 1px solid;
+    border-collapse: collapse;
+    vertical-align: center;
+}
+
+col:nth-of-type(even) {
+    background: rgb(252, 252, 252);
+}
+
+col:nth-of-type(odd) {
+    background: rgb(254, 254, 254);
+}
+
+thead tr:first-of-type {
+    background: rgb(241, 241, 241);
+}
+
+/* Table header and table data with a light grey solid 1px border. Top and bottom padding of 12px and left and right padding of 6 pixels. Width of 12.5%. */
+th,
+td {
+    border: rgb(235, 235, 235) 1px solid;
+    padding: 12px 6px;
+    width: 12.5%;
+}
+
+/* Background of light blue with transition of .2s for hover. */
+.open {
+    background: rgb(239, 247, 255);
+    transition: .2s;
+}
+
+/* on hover change darker blue. */
+.open:hover {
+    background: rgb(209, 229, 247);
+}
+
+/* A id with a background of grey. */
+#close {
+    background: rgb(241, 241, 241);
+}
+
+/* Caption with a top margin of 10px. */
+caption {
+    margin-top: 10px;
+}
